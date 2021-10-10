@@ -1,0 +1,476 @@
+/* ============== Basic Setup ===================== */
+body{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl{
+    max-width:1280px;
+}
+
+/* ============== Global Classes ===================== */
+.button{
+    background: #342d65;
+            margin: 5px 0;
+            border-radius: 5px;
+            color: #fff;
+            padding: 7px 15px;
+            border: 1px solid #342d65;
+            transition: 0.3s;
+            display: inline-block;
+            &:hover{
+                background: #fff;
+                color:#342d65;
+            }
+}
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #34315d;
+    font-weight: 700;
+    line-height: 1.125;
+    word-break: break-word;
+}
+.section-description{
+    color:#696969;
+    font-size: 1rem;
+    margin-bottom: 0;
+    transition: .5s;
+    max-width: 600px;
+    margin: auto;
+}
+/* ============== Navigation ===================== */
+.navbar{
+    .container, .container-sm, .container-md, .container-lg, .container-xl{
+        max-width:1200px;
+    }
+    .nav-item{
+        .nav-link{
+            color: #342d65;
+            .lang-btn{
+                background: #ff284f;
+                width: 60px;
+                height: 26px;
+                border-radius: 10em;
+                text-align: center;
+                position: relative;
+                h6{
+                    color: #fff;
+                    font-weight: 400;
+                    position:absolute;
+                    top: 2px;
+                    left: 30px;
+                }
+                span{
+                    background: #fff;
+                    color: #342d65;
+                    font-size: 14px;
+                    position: absolute;
+                    left: -5px;
+                    top: -2.5px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+                }
+            }
+            .lang-btn-eng{
+                background: #ff284f;
+                width: 60px;
+                height: 26px;
+                border-radius: 10em;
+                text-align: center;
+                position: relative;
+                h6{
+                    color: #fff;
+                    font-weight: 400;
+                    position:absolute;
+                    left: 5px;
+                    top: 3px;
+                    font-size: .9rem;
+                    
+                }
+                span{
+                    background: #fff;
+                    color: #342d65;
+                    font-size: 14px;
+                    position: absolute;
+                    right: -3px;
+                    top: -2.5px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    box-shadow: -5px 5px 10px rgba(0,0,0,0.1);
+                }
+            }
+        }
+        .menu-btn1{
+            background: #342d65;
+            margin: 5px;
+            border-radius: 5px;
+            color: #fff;
+            padding: 7px 15px;
+            border: 1px solid #342d65;
+            transition: 0.3s;
+            &:hover{
+                background: #fff;
+                color:#342d65;
+            }
+        }
+        .menu-btn2{
+            background: #ff284f;
+            margin: 5px;
+            border-radius: 5px;
+            color: #fff;
+            padding: 7px 15px;
+            border: 1px solid #ff284f;
+            transition: 0.3s;
+            &:hover{
+                background: #fff;
+                color:#ff284f;
+            }
+        }
+    }
+}
+/* ============== Home Section ===================== */
+#home{
+    .row{
+        border-radius: 1.5rem;
+        .title{
+            font-size: 3rem;
+            font-weight: 700;
+             color:#342d65;
+             span{
+                 color:#ff284f;
+             }
+            }
+            .little-description{
+                color: #696969;
+                font-size: 1rem;
+                line-height: 1.25;
+                margin-top: 20px;
+                span{
+                    color: #ff284f;
+                    font-weight: bold;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            .home-column{
+                border-radius: 1.5rem;
+                background: #fff;
+                transition: .5s;
+                img{
+                    height: 96px;
+                    width: 96px;
+                }
+                p{
+                    color:#696969;
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                    transition: .5s;
+                }
+                span{
+                    color:#696969;
+                    transition: .5s;
+                }
+                &:hover{
+                    background:#342d65;
+                    p{
+                        color: #fff;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        @media only screen and(max-width: 991px){
+            a{
+                .home-column{
+                    position: relative;
+                    img{
+                        height: 64px;
+                        width: 64px;
+                        display: inline-block;
+                        text-align: left;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                    p{
+                        display: inline;
+                    }
+                video{
+                    width: 100%;
+                }
+            }
+            }
+    }
+    @media only screen and(max-width: 1200px){
+            video{
+                width: 100%;
+            }
+    }
+}
+/* ============== Brac Section ===================== */
+#brac-section{
+    .row{
+        background: #EFF5FF;
+        border-radius: 1.5rem;
+        a{
+        text-decoration: none;
+        }
+        .btn-brac{
+            background:#3DB188;
+            border: 1px solid #3DB188;
+            display: inline-block;
+            margin-top: 10px;
+            &:hover{
+                background:#fff;
+                color: #3DB188;
+            }
+        }
+        p{
+            color:#696969;
+            font-size: 1rem;
+            margin-bottom: 0;
+            transition: .5s;
+        }
+    }
+}
+/* ============== Books Section ===================== */
+#Books{
+    background: #F7F8FA;
+    .sub-title{
+        color: #ff284f;
+        font-weight: 700 !important;
+        text-decoration: none;
+        &:hover{
+            color:#342d65;
+        }
+    }
+    .owl-carousel{
+        
+        .item{
+            
+           .slider-content{
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: -3px 3px 20px rgba(0,0,0,0.1),3px 3px 20px rgba(0,0,0,0.1);
+                a{
+                    text-decoration: none;
+                    .slider-img{
+                        height: 18em;
+                        width: auto;
+                        margin: auto;
+                        padding: 20px 0;
+                        display: block;
+                        border-radius: 12%;
+                    }
+                    .slider-title{
+                        font-size: 20px;
+                        color: #34315d;
+                        font-weight: 700;
+                        line-height: 1.125;
+                    }
+                    p{
+                        color:#696969;
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                        transition: .5s;
+                    }
+                }
+           }
+        }
+        .owl-nav{
+            button{
+                &:focus, &:hover{
+                    outline: none;
+                    background-color: transparent;
+                    box-shadow: none;
+                    color: #333;
+                }
+                span{
+                    background: #fff;
+                    padding: 0 1.5rem;
+                    border-radius: 50%;
+                    font-size: 2rem;
+                    box-shadow: -3px 3px 20px rgba(0,0,0,0.1),3px 3px 20px rgba(0,0,0,0.1);
+                    margin-left: calc(1.5em - 1px);
+                    margin-right: calc(1.5em - 1px);
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: -2.5rem;
+           .active{
+            span{
+                background: red;
+            }
+           }
+        }
+    }
+    @media only screen and(max-width:991px){
+        .owl-dots{
+            display: none;
+        }
+        .owl-nav{
+            button{
+                span{
+                    margin-left: calc(.5em - 1px);
+                    margin-right: calc(.5em - 1px);
+                }
+            }
+        }
+    }
+}
+/* ============== Slider Section ===================== */
+#slider{
+    .carousel{
+        .carousel-control-prev,
+        .carousel-control-next{
+            color: #111;
+            font-size: 1rem;
+            i{
+                background: #fff;
+                padding:  .6rem .8rem;
+                border-radius: 50%;
+                box-shadow: -5px 5px 20px rgba(0,0,0,0.1),5px 5px 20px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+/* ============== Learn Section ===================== */
+#learn{
+    h2{
+        span{
+            color:#ff284f !important;
+        }
+    }
+    p{
+        color: #696969;
+    }
+    .button{
+        text-decoration: none;
+        background: #ff284f;
+        border: 1px solid #ff284f;
+        &:hover{
+            background: #fff;
+            color: #ff284f;
+        }
+    }
+    .learn-culumn{
+        background: #fff;
+        border-radius: .7rem;
+        box-shadow: -3px 3px 20px rgba(0,0,0,0.1),3px 3px 20px rgba(0,0,0,0.1);
+        position: relative;
+        .culumn-content{
+            position: absolute;
+            top: 25px;
+            left: 95px;
+        }
+        h2{
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+    @media only screen and(max-width: 768px){
+        .study-img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+/* ============== Digital Learning ===================== */
+#digital-learning{
+    .section-title-top{
+        color:#342d65;
+        margin-bottom: 12px;
+    }
+    .section-title{
+        span{
+            color: #ff284f;
+        }
+    }
+    .button{
+        text-decoration: none;
+        background: #ff284f;
+        border: 1px solid #ff284f;
+        margin-top: 20px;
+        &:hover{
+            background: #fff;
+            color: #ff284f;
+        }
+    }
+    .digital-slider{
+        max-width:600px;
+        margin: auto;
+
+        .owl-carousel{
+            .owl-dots{
+                margin-top: 30px;
+                span{
+                    width: 8.5px;
+                    height: 8.5px;
+                }
+                .active{
+                    span{
+                        background: red;
+                    }
+                   }
+            }
+        }
+    }
+}
+/* ============== Footer section ===================== */
+#footer{
+    background: linear-gradient(180deg, #363643 0%, #110E17 100%);
+    .culumn-1{
+        .footer-description{
+            max-width: 500px;
+            .section-description{
+                color: #fff;
+                margin: 1.5rem 0;
+            }
+        }
+        .social-icons{
+            width: 180px;
+            a{
+                font-size: 1.5rem;
+                color: #fff;
+                &:hover{
+                    color:#34315d;
+                }
+            }
+        }
+    }
+    .culumn-2,.culumn-3{
+        h5{
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                margin:0;
+                list-style-type: none;
+                margin-bottom: 7px;
+                a{
+                    text-decoration: none;
+                    transition: .3s;
+                    color: #d1cfcf;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    small{
+        font-size:.875em;
+    }
+}
